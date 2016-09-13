@@ -1,0 +1,10 @@
+name: ResourcesRegenerate
+main: tk.imdt.javadev.Main
+version: 0.0.2
+depend: [Multiverse-Core]
+commands:
+  regensourcesworld:
+    permission: regensourcesworld.admin
+permissions:
+  regensourcesworld.admin:
+    default: op

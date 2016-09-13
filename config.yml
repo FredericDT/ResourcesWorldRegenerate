@@ -1,0 +1,5 @@
+config:
+  resourceworldname: Resources
+  regencycleinsec: 86400
+  spawnworldname: new
+  nextregen: 0
