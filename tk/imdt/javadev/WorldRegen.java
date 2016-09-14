@@ -54,10 +54,10 @@ public class WorldRegen {
 		regenCmd.runCommand(this.PluginMain.getConsoleCommandSender(), regenCmdString);
 	}
 	public List<Player> getPlayerInResourceWorld() {
-        MultiverseWorld world;
-        world = this.worldManager.getMVWorld(this.PluginMain.getResourcesWorldName());
-        List<Player> players = world.getCBWorld().getPlayers();
-        return players;
+        	MultiverseWorld world;
+		world = this.worldManager.getMVWorld(this.PluginMain.getResourcesWorldName());
+        	List<Player> players = world.getCBWorld().getPlayers();
+        	return players;
 	}
 	private void sendPlayersBack(List<Player> players) {
 		TeleportCommand tpcmd = new TeleportCommand(this.mvCore);
