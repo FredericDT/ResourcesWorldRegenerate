@@ -24,7 +24,7 @@ public class BossBarCountDown {
 		this.worldRegen = new WorldRegen(this.plugin, this.MVplugin);
 		init();
 	}
-	public void init() {
+	private void init() {
 		this.bar = this.plugin.getServer().createBossBar("TempName", BarColor.RED, BarStyle.SOLID);
 		this.bar.setProgress(1.0);
 	}
