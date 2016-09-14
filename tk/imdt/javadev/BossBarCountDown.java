@@ -12,10 +12,10 @@ import com.onarandombox.MultiverseCore.MultiverseCore;
 import com.onarandombox.MultiverseCore.api.MultiverseWorld;
 
 public class BossBarCountDown {
-	Plugin plugin;
-	BossBar bar;
-	Plugin MVplugin;
-	WorldRegen worldRegen;
+	private Plugin plugin;
+	private BossBar bar;
+	private Plugin MVplugin;
+	private WorldRegen worldRegen;
 	
 	public BossBarCountDown(Plugin plugin, Plugin MVplugin) {
 		this.plugin = plugin;
@@ -24,7 +24,7 @@ public class BossBarCountDown {
 		this.worldRegen = new WorldRegen(this.plugin, this.MVplugin);
 		init();
 	}
-	public void init() {
+	private void init() {
 		this.bar = this.plugin.getServer().createBossBar("TempName", BarColor.RED, BarStyle.SOLID);
 		this.bar.setProgress(1.0);
 	}
